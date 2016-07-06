@@ -1,0 +1,48 @@
+table{
+  margin: auto;
+  border: 5px solid black;
+  border-collapse: collapse;;
+  border-spacing: 3px;
+}
+td{
+  width: 20px;
+  height: 20px;
+  margin: 20px;
+  padding: 30px;
+  border: 5px solid black;
+}
+.yellow{
+  background-color: yellow;
+}
+.red{
+  background-color: red;
+
+}
+.blue{
+  background-color: blue;
+}
+.grey{
+  background-color: #2F4F4F;
+}
+.stretch{
+  width: 80px;
+}
+.pull{
+  height: 80px;
+}
+.remove_border1{
+  border-bottom: 0;
+  border-right: 0;
+}
+.remove_border2{
+  border-bottom: 0;
+  border-left: 0;
+}
+.remove_border3{
+  border-top: 0;
+  border-right: 0;
+}
+.remove_border4{
+  border-top: 0;
+  border-left: 0;
+}
