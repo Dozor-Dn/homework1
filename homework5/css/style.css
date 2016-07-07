@@ -72,7 +72,7 @@ span{
   height: 610px;
   margin-left: -230px;
   margin-top: -305px;
-  color: white;
+  color: #fefefe;
 }
 .form_header{
   width: 100%;
@@ -100,7 +100,7 @@ span{
   border-radius: 3px;
   color: #2e447d;
 }
-.line{
+/*.line{
   color: rgb( 153, 153, 153 );
   font-size: 16px;
   margin-left: 135px;
@@ -113,6 +113,24 @@ hr{
   border: 0;
   background: rgb(0, 0, 0);
   background: linear-gradient(0deg, rgb(0, 0, 0) 30%, rgb(102, 102, 102) 100%);
+}*/
+fieldset {
+    display: block;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-top: 1px solid #666;
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+    /*box-shadow: 0 -1px 0px #666;*/
+}
+legend{
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #999999;
 }
 .first_name{
   width: 253px;
@@ -123,6 +141,7 @@ hr{
   background-color: black;
   border: 0;
   box-shadow: 0px 2px 0px 0px rgba(75, 75, 75, 1);
+  color: #fefefe;
 }
 .last_name{
   width: 253px;
@@ -133,6 +152,7 @@ hr{
   background-color: black;
   border: 0;
   box-shadow: 0px 2px 0px 0px rgba(75, 75, 75, 1);
+  color: #fefefe;
 }
 .email{
   width: 253px;
@@ -143,6 +163,7 @@ hr{
   background-color: black;
   border: 0;
   box-shadow: 0px 2px 0px 0px rgba(75, 75, 75, 1);
+  color: #fefefe;
 }
 .password{
   width: 253px;
@@ -153,8 +174,9 @@ hr{
   background-color: black;
   border: 0;
   box-shadow: 0px 2px 0px 0px rgba(75, 75, 75, 1);
+  color: #fefefe;
 }
-.fil input{
+.fill input{
   background-color: black;
   border: 0;
 }
