@@ -18,9 +18,11 @@
         <div class="logo"><img src="img/logo.png" alt="avtorisation"></div>
         <input type="text" name="logo" placeholder=" логин">
         <input type="password" name="password" placeholder=" пароль">
-        <a href="#"> &nbsp;&nbsp;вход |</a>
-        <a href="#"> регистрация</a>
-        <a href="#"><span>забыли пароль?</span></a>
+          <div class="enter">
+            <a href="#"> вход |</a>
+            <a href="#"> регистрация</a>
+            <a href="#"><span>забыли пароль?</span></a>
+          </div>
       </div>
       <div class="navi">
           <a href="#"><img src="img/home.png" alt="home" /></a>
@@ -41,8 +43,12 @@
       <div class="shopping">
         <a href="#"><img src="img/koshyk.png" alt="shopping cart" /></a>
         <div class="allgoods">
-          товаров: <span>0</span>&nbsp;&nbsp;&nbsp;&nbsp;
-          на сумму:&nbsp;&nbsp;&nbsp;<span>0,00 грн.</span>
+          <div class="goods_indent">
+            товаров: <span>0</span>
+          </div>
+          <div class="sum_indent">
+            на сумму:<span>0,00 грн.</span>
+          </div>
         </div>
       </div>
     </nav>
@@ -206,24 +212,24 @@
       <a href="#" class="catalog"><div class="icon"></div><p>КАТАЛОГ ПРОДУКЦИИ:</p></a>
         <div class="icon_ultires"></div><p class="ultires">ШИНЫ</p>
         <ul class="ultires">
-          <li><a href="#"><div class="marker"></div><p>Наименование 1</p></a></li>
-          <li><a href="#"><div class="marker"></div><p>Наименование 2</p></a></li>
-          <li><a href="#"><div class="marker"></div><p>Наименование 3</p></a></li>
-          <li><a href="#"><div class="marker"></div><p>Наименование 4</p></a></li>
+          <li><a href="#">Наименование 1</a></li>
+          <li><a href="#">Наименование 2</a></li>
+          <li><a href="#">Наименование 3</a></li>
+          <li><a href="#">Наименование 4</a></li>
         </ul>
         <div class="icon_uldisks"></div><p class="uldisks">ДИСКИ</p>
         <ul class="uldisks">
-          <li><a href="#"><div class="marker"></div><p>Наименование 1</p></a></li>
-          <li><a href="#"><div class="marker"></div><p>Наименование 2</p></a></li>
-          <li><a href="#"><div class="marker"></div><p>Наименование 3</p></a></li>
-          <li><a href="#"><div class="marker"></div><p>Наименование 4</p></a></li>
+          <li><a href="#">Наименование 1</a></li>
+          <li><a href="#">Наименование 2</a></li>
+          <li><a href="#">Наименование 3</a></li>
+          <li><a href="#">Наименование 4</a></li>
         </ul>
         <div class="icon_ulbolts"></div><p class="ulbolts">БОЛТЫ</p>
         <ul class="ulbolts">
-          <li><a href="#"><div class="marker"></div><p>Наименование 1</p></a></li>
-          <li><a href="#"><div class="marker"></div><p>Наименование 2</p></a></li>
-          <li><a href="#"><div class="marker"></div><p>Наименование 3</p></a></li>
-          <li><a href="#"><div class="marker"></div><p>Наименование 4</p></a></li>
+          <li><a href="#">Наименование 1</a></li>
+          <li><a href="#">Наименование 2</a></li>
+          <li><a href="#">Наименование 3</a></li>
+          <li><a href="#">Наименование 4</a></li>
         </ul>
       </aside>
     <main>
@@ -317,19 +323,19 @@
             <li>
               <label for="brend_1">
                 <input type="checkbox" id="brend_1" value="brend_1">
-                <span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Бренд&nbsp;1
+                <span></span>Бренд 1
               </label>
             </li>
             <li>
               <label for="brend_2">
                 <input type="checkbox" id="brend_2" value="brend_2">
-                <span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Бренд&nbsp;2
+                <span></span>Бренд 2
               </label>
             </li>
             <li>
               <label for="brend_3">
                 <input type="checkbox" id="brend_3" value="brend_3">
-                <span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Бренд&nbsp;3
+                <span></span>Бренд 3
               </label>
             </li>
           </ul>
@@ -338,17 +344,17 @@
             <li>
               <label for="brend_2.1">
                 <input type="checkbox" id="brend_2.1" value="brend_2.1">
-                <span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Бренд&nbsp;1
+                <span></span>Бренд 1
               </label>
             </li>
             <li>
               <label for="brend_2.2"><input type="checkbox" id="brend_2.2" value="brend_2.2">
-                <span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Бренд&nbsp;2
+                <span></span>Бренд 2
               </label>
             </li>
             <li>
               <label for="brend_2.3"><input type="checkbox" id="brend_2.3" value="brend 2.3">
-                <span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Бренд&nbsp;3
+                <span></span>Бренд 3
               </label>
             </li>
           </ul>
@@ -367,9 +373,9 @@
     </section>
     <footer>
       <div class="footer_nav">
-        <a href="#">О компании&nbsp;&nbsp;|</a>
-        <a href="#">Доставка &nbsp;|</a>
-        <a href="#">Статьи &nbsp;|</a>
+        <a href="#">О компании <span class="indent">|</span> </a>
+        <a href="#">Доставка <span class="indent">|</span> </a>
+        <a href="#">Статьи <span class="indent">|</span> </a>
         <a href="#">Контакты</a><br>
         <span>Создание сайта &copy; Global Vision</span>
       </div>

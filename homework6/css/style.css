@@ -56,6 +56,9 @@ header{
   font-family: "Lucida Sans Unicode";
   color: rgb( 255, 255, 255 );
 }
+.avtoriz .enter{
+  margin-left: 270px;
+}
 .avtoriz input{
   display: block;
   float: left;
@@ -183,7 +186,16 @@ nav ul li a:hover{
   font-size: 12px;
   font-family: "Arial";
 }
+.shopping .goods_indent{
+  margin-right: 15px;
+  float: left;
+}
+.shopping .sum_indent{
+  margin-right: 15px;
+  float: right;
+}
 .shopping span{
+  margin-left: 5px;
   font-size: 12px;
   font-family: "Arial";
   color: rgb( 13, 90, 143 );
@@ -209,7 +221,7 @@ nav ul li a:hover{
   box-shadow: 4px 3px 5px 0px rgba(104, 104, 104, 0.5);
 }
 .find_cars form input.search{
-  position: absolute;
+  margin: 90px 0px 0px 350px; 
   top: 109px;
   left:342px;
 }
@@ -454,7 +466,7 @@ nav ul li a:hover{
   color: rgb( 0, 0, 0 );
 }
 .find_tires .search2{
-  position: absolute;
+  margin: 0px 0px 0px 130px;
   top: 109px;
   left:117px;
 }
@@ -529,7 +541,6 @@ select.radius{
   float: left;
   border-top: 2px solid #9f9f9f;
   border-left: 2px solid #9f9f9f;
-  /*border-bottom: 2px solid #9f9f9f;*/
   background: white;
   width: 44px;
   margin-left: 2px;
@@ -641,7 +652,7 @@ select.radius{
   box-shadow: 4px 3px 5px 0px rgba(104, 104, 104, 0.5);
 }
 .find_disks form input.search3{
-  position: absolute;
+  margin: 90px 0px 0px 205px;
   top: 110px;
   left:195px;
 }
@@ -944,13 +955,12 @@ aside.left li{
   margin-top: 5px;
   margin-right: 10px;
   line-height: 1.2;
+  list-style-type: none;
 }
-aside.left li a div.marker{
-  margin-top: 2px;
-  width: 10px;
-  height: 12px;
-  background: url(../img/marker.png);
-  float: left;
+aside.left li:before{
+  color: rgb( 17, 65, 101 );
+  content: "○";
+  padding-right: 10px;
 }
 aside.left li a{
   margin-top: 20px;
@@ -978,7 +988,6 @@ main{
   margin-bottom: 35px;
   background: rgb(148, 167, 176);
   background: linear-gradient(0deg, rgb(148, 167, 176) 0%, rgb(228, 230, 231) 100%);
-  /*border: 1px solid #242a3c;*/
   border-radius: 0px;
 }
 div.goods{
@@ -989,20 +998,14 @@ div.goods{
   height: 175px;
 }
 div.goods_line2{
-  margin-top: 12px;
-  margin-left: 15px;
-  margin-right: 15px;
-  margin-bottom: 15px;
+  margin: 15px;
   display: block;
   float: left;
   width: 140px;
   height: 175px;
 }
 div.goods_line3{
-  margin-top: 15px;
-  margin-left: 15px;
-  margin-right: 15px;
-  margin-bottom: 15px;
+  margin: 15px;
   display: block;
   float: left;
   width: 140px;
@@ -1031,7 +1034,6 @@ a.title{
 }
 a.brand_nokian{
   display: block;
-  margin-top: 0px;
   margin-left: 48px;
   text-decoration: none;
   color: #206988;
@@ -1052,7 +1054,6 @@ a.title_nokian{
 }
 a.brand_hankook{
   display: block;
-  margin-top: 0px;
   margin-left: 38px;
   text-decoration: none;
   color: #206988;
@@ -1302,9 +1303,10 @@ aside.right ul a{
   line-height: 1.5;
 }
 .select_brends label {
- width: 14px; /* Ширина рисунка */
+ width: 80px; /* Ширина рисунка */
  height: 14px; /* Высота рисунка */
  margin-left: 22px;
+ padding-left: 20px;
  margin-top: 8px;
  margin-bottom: 10px;
  display: block; /* Блочный элемент */
@@ -1323,7 +1325,6 @@ aside.right ul a{
  top: 0;
  width: 100%;
  height: 100%;
- margin-right: 10px;
  background: url(../img/checkbox.jpg) no-repeat; /* Фоновый рисунок */
  cursor: pointer; /* Курсор в виде руки */
 }
@@ -1336,8 +1337,6 @@ input.btn_select{
 .brand_logo{
   clear: both;
   margin-left: 110px;
-  margin-top: 0px;
-  margin-bottom: 0px;
 }
 .brand_logo a.brend1 img{
   display: block;
@@ -1403,4 +1402,9 @@ footer a:hover{
   color: rgb( 127, 71, 64 );
   line-height: 1.8;
   text-align: center;
+}
+.footer_nav span.indent{
+  margin: 0px 5px 0px 10px;
+  display: inline;
+  color: white;
 }
