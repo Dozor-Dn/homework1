@@ -30,23 +30,18 @@ header{
   margin-left: 6px;
 }
 .number{
-  position: absolute;
   float: left;
+  margin-left: 10px;
   font-size: 19px;
   font-family: "Arial";
   color: rgb( 94, 105, 109 );
   line-height: 1;
   text-align: center;
 }
-.phone .number{
-  margin-right: 5px;
-  margin-left: 30px;
-}
 .avtoriz{
-  position: absolute;
   float: left;
   margin-left: 312px;
-  margin-top: -5px;
+  margin-top: -25px;
   width: 495px;
   height: 25px;
   background: linear-gradient(to bottom, rgba(32,105,136,1) 0%, rgba(17,65,101,1) 59%, rgba(12,50,86,1) 100%);
@@ -107,23 +102,31 @@ header{
   letter-spacing: 0px;
 }
 .navi{
-  position: absolute;
   float: left;
   width: 76px;
   height: 20px;
   margin-left: 825px;
-  margin-top: -5px;
+  margin-top: -25px;
   border: 1px solid #bdc4c7;
   background: white;
   border-radius: 10px;
   box-shadow: 1px 1px 3px 0px rgba(188, 195, 198, 0.52),
               -1px 1px 3px 0px rgba(188, 195, 198, 0.52);
 }
-.navi a img{
-  display: inline-block;
-  float: left;
+.fa-home{
+  color: gray;
   margin-left: 5px;
-  margin-top: 3px;
+  margin-top: 2px;
+}
+.fa-sitemap{
+  color: gray;
+  margin-left: 5px;
+  margin-top: 2px;
+}
+.fa-envelope-o{
+  color: gray;
+  margin-left: 5px;
+  margin-top: 2px;
 }
 .baner{
   position: absolute;
@@ -171,6 +174,12 @@ nav ul li a:hover{
   border-radius: 10px;
   background: linear-gradient(0deg, rgb(32, 105, 136) 0%, rgb(12, 50, 86) 100%);
 }
+.fa-shopping-cart{
+  color:#0d5a8f;
+  float: left;
+  margin-left:25px;
+  margin-top: 3px;
+}
 .shopping {
   position: absolute;
   margin-top: 0px;
@@ -187,7 +196,7 @@ nav ul li a:hover{
   font-family: "Arial";
 }
 .shopping .goods_indent{
-  margin-right: 15px;
+  margin: 0px 8px;
   float: left;
 }
 .shopping .sum_indent{
@@ -679,6 +688,7 @@ select.radius{
   display: block;
   float: left;
   margin-top: 0px;
+  margin-left: 0px;
   font-size: 10px;
   font-family: "Lucida Sans Unicode";
   color: rgb( 0, 0, 0 );
@@ -732,7 +742,7 @@ select.radius{
   background: white;
   width: 50px;
   margin-left: 87px;
-  margin-top: 13px;
+  margin-top: -18px;
   overflow: hidden;
   display: inline-block;
   position: relative;
@@ -962,6 +972,13 @@ aside.left li:before{
   content: "○";
   padding-right: 10px;
 }
+aside.left li:hover:before{
+  color: rgb( 7, 7, 7 );
+  content: "\f10c";
+  font-family: FontAwesome;
+  font-size: 10px;
+  padding-right: 10px;
+}
 aside.left li a{
   margin-top: 20px;
   font-size: 12.73px;
@@ -976,9 +993,9 @@ aside.left li a:hover {
   font-style: italic;
   color: rgb( 17, 65, 101 );
 }
-aside.left li a:hover div.marker{
+/*aside.left li a:hover div.marker{
 background: url(../img/marker_bold.png);
-}
+}*/
 main{
   float: left;
   width: 525px;
@@ -1331,8 +1348,14 @@ aside.right ul a{
 .select_brends input[type="checkbox"]:checked + span{
  background-position: 0 -14px;
 }
-input.btn_select{
-  margin: 15px 20px;
+button{
+  margin: 15px 25px;
+  padding: 5px 10px;
+  background-color: #0f3b60;
+  color: #e5e9ea;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 2px 2px 3px #a4aeb1;
 }
 .brand_logo{
   clear: both;
