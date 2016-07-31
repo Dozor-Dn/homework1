@@ -1,0 +1,861 @@
+@font-face {
+    font-family: 'open_sansextrabold';
+    src: url('../fonts/opensans-extrabold-webfont.eot');
+    src: url('../fonts/opensans-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-extrabold-webfont.woff') format('woff'),
+         url('../fonts/opensans-extrabold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('../fonts/opensans-light-webfont.eot');
+    src: url('../fonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-light-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-light-webfont.woff') format('woff'),
+         url('../fonts/opensans-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'league_gothiccondensed_italic';
+    src: url('../fonts/leaguegothic-condenseditalic-webfont.eot');
+    src: url('../fonts/leaguegothic-condenseditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/leaguegothic-condenseditalic-webfont.woff2') format('woff2'),
+         url('../fonts/leaguegothic-condenseditalic-webfont.woff') format('woff'),
+         url('../fonts/leaguegothic-condenseditalic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'league_gothicCnRg';
+    src: url('../fonts/leaguegothic-condensedregular-webfont.eot');
+    src: url('../fonts/leaguegothic-condensedregular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/leaguegothic-condensedregular-webfont.woff2') format('woff2'),
+         url('../fonts/leaguegothic-condensedregular-webfont.woff') format('woff'),
+         url('../fonts/leaguegothic-condensedregular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'league_gothicitalic';
+    src: url('../fonts/leaguegothic-italic-webfont.eot');
+    src: url('../fonts/leaguegothic-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/leaguegothic-italic-webfont.woff2') format('woff2'),
+         url('../fonts/leaguegothic-italic-webfont.woff') format('woff'),
+         url('../fonts/leaguegothic-italic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'league_gothicregular';
+    src: url('../fonts/leaguegothic-regular-webfont.eot');
+    src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/leaguegothic-regular-webfont.woff2') format('woff2'),
+         url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
+         url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+header{
+  height: 850px;
+  background: url("../img/bg.png") no-repeat center;
+  background-size: cover;
+}
+.container{
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+/*.logo{
+  display: block;
+  max-width: 152px;
+  width: 100%;
+}*/
+.header__top{
+  padding-top: 70px;
+}
+nav{
+  float: right;
+  /*margin-top: -42px;*/
+}
+.menu{
+  font-family: 'league_gothicregular';
+  font-size: 24px;
+}
+.menu__element{
+  list-style-type: none;
+  display: inline-block;
+  float: left;
+}
+.menu__link{
+  margin-right: 55px;
+  text-decoration: none;
+  color: rgb( 255, 255, 255 );
+  text-shadow: 1px 1.732px 2px rgb( 0, 0, 0 );
+  line-height: 1.405;
+  text-transform: uppercase;
+}
+.menu__link:hover{
+  border-bottom: 2px solid #edbfff;
+}
+.slider{
+  height: 400px;
+  margin-top: 170px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.slider__phone{
+  width: 55%;
+  padding-top: 70px;
+}
+.slider__phone h1{
+  font-family: 'league_gothicregular';
+  font-size: 60px;
+  color: rgb( 254, 254, 254 );
+  text-shadow: 0px 2px 2px rgb( 0, 0, 0 );
+  line-height: 1;
+}
+.slider__phone h3{
+  font-size: 33px;
+  font-family: 'league_gothicregular';
+  color: rgb( 237, 191, 235);
+  text-transform: uppercase;
+  text-shadow: 0px 2px 2px rgb( 0, 0, 0 );
+  line-height: 1.2;
+}
+.slider__phone p{
+  font-size: 18px;
+  font-family: 'open_sanslight';
+  color: rgb( 254, 254, 254 );
+  /*text-shadow: 0px 2px 2px rgb( 0, 0, 0 );*/
+  text-align: left;
+  line-height: 1.4;
+}
+.phone{
+  float: right;
+  margin-top: -310px;
+  margin-right: 80px;
+}
+.about{
+  height: 275px;
+  padding: 30px 0px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#322539+0,745083+100 */
+  background: rgb(50,37,57); /* Old browsers */
+  background: -moz-linear-gradient(bottom,  rgba(50,37,57,1) 0%, rgba(116,80,131,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(bottom,  rgba(50,37,57,1) 0%,rgba(116,80,131,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to top,  rgba(50,37,57,1) 0%,rgba(116,80,131,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#322539', endColorstr='#745083',GradientType=0 ); /* IE6-9 */
+  border-top: 1px solid #1d2f37;
+  border-bottom: 1px solid #1d2f37;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 5px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 5px 5px 0px rgba(50, 50, 50, 0.75);
+}
+.row{
+  font-size: 0;
+}
+.about section{
+  width: 28.64583333333333%;
+  margin-top: 50px;
+  margin-right: 45px;
+  display: inline-block;
+  font-family: 'Open Sans Light';
+  font-size: 16px;
+  color: rgb( 255, 255, 255 );
+  line-height: 1.5;
+  text-align: left;
+  vertical-align: top;
+  text-shadow: 0.5px 0.866px 0px rgb( 15, 21, 24 );
+}
+.about h2{
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-family: 'league_gothicregular';
+  color: rgb( 255, 255, 255 );
+  line-height: 0.8;
+  text-align: left;
+  text-shadow: 0.5px 0.866px 0px rgb( 15, 21, 24 );
+  text-transform: uppercase;
+}
+.about p{
+  margin-left: 55px;
+}
+a.read_more{
+  display: inline-block;
+  margin-left: 220px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  font-family: 'league_gothicregular';
+  text-align: right;
+}
+a.read_more:hover{
+  text-shadow: 0px 0px 8px rgb( 255, 255, 255 );
+}
+.sprite{
+  width: 30px;
+  height: 26px;
+  float: left;
+  margin-right: 25px;
+  background: url('../img/sprite.png') no-repeat 0 0;
+}
+.message .sprite{
+  background-position: 0 -31px;
+}
+.note .sprite{
+  background-position: 0 -58px;
+}
+.content{
+  height: 515px;
+  padding-top: 100px;
+  background: #f9f9f9;
+}
+.content section{
+  width: 48.19375%;
+  display: inline-block;
+  line-height: 1.5;
+  text-align: left;
+  vertical-align: top;
+}
+.testimonials{
+  width: 427px;
+  height: 292px;
+  padding-top: 33px;
+  margin-left: 25px;
+  background:url('../img/testimonials.png') no-repeat 0 0;
+}
+.testimonials img{
+  margin-left: -22px;
+  margin-top: -15px;
+  float: left;
+}
+.testimonials h3{
+  margin-left: 35px;
+  font-size: 30px;
+  font-family: 'league_gothicregular';
+  color: rgb( 69, 69, 69 );
+  text-transform: uppercase;
+  line-height: 0.8;
+  text-align: left;
+  text-shadow: 0.5px 0.866px 0px rgb( 255, 255, 255 );
+}
+.testimonials h3 span{
+  color: #edbfff;
+}
+.testimonials p{
+  margin-left: 35px;
+  margin-top: 15px;
+  margin-right: 35px;
+  font-size: 16px;
+  font-family: 'open_sanslight';
+  font-weight: normal;
+  color: rgb( 69, 69, 69 );
+  line-height: 1.5;
+  text-align: left;
+  text-shadow: 0.5px 0.866px 0px rgb( 255, 255, 255 );
+}
+.navigation{
+  margin-left: 180px;
+}
+.navigation__element{
+  width:11px;
+  height: 11px;
+  margin-right: 5px;
+  float: left;
+  border-radius: 100%;
+  border: 1px solid lightgrey;
+}
+.navigation__element:hover{
+  cursor: pointer;
+  background-color: #555555;
+}
+.blog{
+  padding-top: 30px;
+  margin-left: 50px;
+}
+.blog__element li{
+  display: inline-block;
+  margin: 20px 0px 5px 0px;
+}
+.blog h3{
+  font-size: 30px;
+  font-family: 'league_gothicregular';
+  color: rgb( 69, 69, 69 );
+  line-height: 0.8;
+  text-align: left;
+  text-shadow: 0.5px 0.866px 0px rgb( 255, 255, 255 );
+  text-transform: uppercase;
+}
+.blog h4{
+  margin-left: 60px;
+  margin-top: -55px;
+  font-size: 16px;
+  font-family: 'open_sansextrabold';
+  color: rgb( 69, 69, 69 );
+  line-height: 8;
+  text-align: left;
+  text-shadow: 0.5px 0.866px 0px rgb( 255, 255, 255 );
+}
+.blog__text p{
+  margin-left: 60px;
+  margin-top: -50px;
+  font-size: 15px;
+  font-family: 'open_sanslight';
+  color: rgb( 69, 69, 69 );
+  text-align: left;
+  text-shadow: 0.5px 0.866px 0px rgb( 255, 255, 255 );
+}
+.blog__text img{
+  float: left;
+}
+.blog .read_more{
+  display: inline-block;
+  margin-left: 330px;
+  margin-top: 5px;
+  font-size: 18px;
+  font-family: 'league_gothicregular';
+  color: rgb( 69, 69, 69 );
+  line-height: 1.333;
+  text-align: left;
+  text-shadow: 0.5px 0.866px 0px rgb( 255, 255, 255 );
+}
+.block_brands{
+  margin-top: 47px;
+  padding: 25px 0px 38px;
+  border-top: 1px solid #dfdcdb;
+  border-bottom: 1px solid #dfdcdb;
+}
+.brands {
+  text-align: center;
+}
+.brands img {
+  margin: 0 30px;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  max-height: 100%;
+}
+footer{
+  height: 500px;
+}
+.footer_box{
+  background-color: #ececec;
+}
+.footer_content{
+  height: 395px;
+  -webkit-box-shadow: 0px 5px 7px -5px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 5px 7px -5px rgba(0,0,0,0.5);
+  box-shadow: 0px 5px 7px -5px rgba(0,0,0,0.5);
+}
+.footer_content section{
+  width: 30.2083333333333333%;
+  margin-top: 70px;
+  margin-right: 30px;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'open_sanslight';
+  color: rgb( 120, 120, 120 );
+  line-height: 1.5;
+  text-align: left;
+  text-shadow: 0.5px 0.866px 0px rgb( 255, 255, 255 );
+}
+.logo h3{
+  font-size: 48px;
+  font-family: 'league_gothicregular';
+  color: rgb( 78, 78, 78 );
+  line-height: 0.703;
+  text-align: left;
+  text-shadow: 0px 1px 0px rgb( 255, 255, 255 );
+  text-transform: uppercase;
+}
+.logo h3 span{
+  display: inline-block;
+  margin-left: -7px;
+  font-size: 48px;
+  font-family: 'league_gothicregular';
+  color: rgb( 185, 185, 185 );
+  line-height: 0.703;
+  text-align: left;
+  text-shadow: 0px 1px 0px rgb( 255, 255, 255 );
+}
+.copyright{
+  margin: 20px 0px 15px;
+  font-size: 16px;
+  font-family: "Georgia";
+  color: rgb( 197, 197, 197 );
+  font-style: italic;
+  line-height: 1.5;
+  text-align: left;
+  text-shadow: 0.5px 0.866px 0px rgb( 255, 255, 255 );
+}
+.footer_content h5{
+  margin: -26px 0px 20px;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: 'league_gothicregular';
+  color: rgb( 69, 69, 69 );
+  line-height: 0.8;
+  text-align: left;
+  text-shadow: 0.5px 0.866px 0px rgb( 255, 255, 255 );
+}
+.headline_first{
+  visibility: hidden;
+}
+.headline_first__element{
+  display: block;
+  margin-top: -50px;
+  padding-top: 30px;
+  height: 7.5em;
+  overflow: hidden;
+}
+.headline_second{
+  visibility: hidden;
+}
+.headline_second__element{
+  margin-top: -16px;
+}
+.headline_third__element{
+  margin-top: 0px;
+}
+.footer_nav{
+  /*margin-left: -650px;*/
+  height: 110px;
+  background: url("../img/bg_blur.png") no-repeat center;
+  font-family: 'league_gothicregular';
+  color: rgb( 255, 255, 255 );
+  line-height: 1.686;
+  text-align: left;
+  text-shadow: 1px 1.732px 2px rgb( 0, 0, 0 );
+}
+.footer_nav nav{
+  margin-top: 35px;
+  float: left;
+}
+.footer_nav .menu__link{
+  font-size: 20px;
+  text-transform: uppercase;
+}
+ .footer_nav .design{
+  padding-top: 45px;
+  margin-left: 750px;
+  font-size: 12px;
+  font-family: 'open_sanslight';
+  color: rgb( 255, 255, 255 );
+  text-align: left;
+  text-shadow: 1px 1.732px 2px rgb( 0, 0, 0 );
+}
+.footer_nav .design span{
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'open_sansextrabold';
+}
+
+@media(max-width: 768px) {
+
+  .container{
+    padding: 0 15px;
+  }
+  nav{
+    float: none;
+    margin-top: 30px;
+  }
+    .slider__phone{
+    width: 40%;
+    height: 12em;
+    overflow: hidden;
+  }
+  .slider__phone h1{
+    font-size: 48px;
+    line-height: 1.2;
+  }
+  .slider__phone h3{
+    font-size: 24px;
+  }
+  .slider__phone p{
+    font-size: 16px;
+    line-height: 1.7;
+  }
+  .phone{
+    margin-right: 90px;
+  }
+  .about{
+    height: auto;
+  }
+  .about section{
+    width: 26.16253802694481%;
+    margin-bottom: 30px;
+    margin-right: 30px;
+  }
+  .about h2{
+    font-size: 24px;
+  }
+  .about p{
+    height: 9em;
+    overflow: hidden;
+  }
+  a.read_more{
+    margin-left: 70%;
+  }
+  .content section{
+    /*width: 48.19375%;*/
+  }
+  .testimonials{
+    width: 313px;
+    height: 272px;
+    background: #fff;
+    /*overflow: hidden;*/
+  }
+  .testimonials h3{
+    font-size: 24px;
+    width: 30%;
+    line-height: 1.1;
+  }
+  .testimonials img{
+    margin-left: -30px;
+  }
+  .testimonials p{
+    display: inline-block;
+    height: 9em;
+    overflow: hidden;
+  }
+  .content .navigation{
+    margin: 20px 0px 0px 130px;
+  }
+  .blog{
+    max-width: 330px;
+    max-height: 265px;
+    margin-left: -5px;
+  }
+  .blog__text p{
+    font-size: 16px;
+    height: 1.5em;
+    overflow: hidden;
+  }
+  .blog .read_more{
+    display: none;
+  }
+  .blog .for_320px{
+    display: inline-block;
+    margin-left: 230px;
+    margin-top: 5px;
+    font-size: 18px;
+    font-family: 'league_gothicregular';
+    color: rgb( 69, 69, 69 );
+    line-height: 1.333;
+    text-align: left;
+    text-shadow: 0.5px 0.866px 0px rgb( 255, 255, 255 );
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .brands{
+    text-align: justify;
+  }
+  .brands img{
+    margin: 0 auto;
+    margin-left: 40px;
+  }
+  .footer_content section{
+    width: 28.11820947414168%;
+    margin-top: 25px;
+  }
+  .footer_content .logo{
+    display: none;
+  }
+  .footer_content .copyright{
+    display: none;
+  }
+  .headline_first h5{
+    visibility: visible;
+    margin-top: 50px;
+  }
+  .headline_first__element{
+    margin-top: 20px;
+    padding-top: 0;
+  }
+  .headline_second{
+    visibility: visible;
+  }
+  .headline_origin{
+    visibility: hidden;
+  }
+  .headline_second__element{
+  margin-top: 20px;
+  }
+  .headline_first__element,
+  .headline_second__element,
+  .headline_third__element{
+    height: 12em;
+    overflow: hidden;
+  }
+  .footer_nav nav{
+    margin-top: 0px;
+  }
+  .footer_nav .design{
+    margin-left: 550px;
+    font-size: 12px;
+  }
+  .footer_nav .design span{
+    font-size: 12px;
+  }
+
+}
+
+@media(max-width: 480px) {
+  .logo img{
+    display: block;
+    margin: 0 auto;
+    padding-top: 30px;
+    margin-bottom: 30px;
+  }
+  /*nav{
+  }*/
+  header .menu{
+    position: absolute;
+    width: 245px;
+    height: 25px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-left: 110px;
+    padding: 10px 0px 10px 0px;
+    z-index: 9;
+    transition: all 0.6s;
+  }
+  header .menu:hover{
+    height: auto;
+    background: rgba(54, 41, 62, 0.9);
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.2);
+    border: 1px solid #051116;
+    border-radius:10px;
+  }
+  header .menu__element{
+    float: none;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  header .menu__element:hover{
+    border-bottom: 3px solid #edbfff;
+  }
+  header .menu__link{
+    margin-left: 50px;
+    border-bottom: 3px solid #edbfff
+  }
+  header .menu__link:hover{
+    border-bottom: none;
+  }
+  .slider__phone{
+    width: 50%;
+  }
+  .slider__phone h1{
+    font-size: 36px;
+  }
+  .slider__phone h3{
+    font-size: 18px;
+  }
+  .slider__phone p{
+    display: none;
+  }
+  img.phone{
+    float: none;
+    width: 185px;
+    margin-left: 250px;
+  }
+  .about{
+    margin: 0;
+    padding: 0;
+  }
+  .about section{
+    width: 96.4683333333333%;
+    height: 143px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .about .read_more{
+    margin: 0;
+    margin-left: 80%;
+    margin-bottom: 0px;
+  }
+  .about p{
+    height: 4.5em;
+    padding: 10px;
+  }
+  .content section{
+    width: 96.4683333333333%;
+    margin-top: -50px;
+    margin-left: 50px;
+  }
+  .content .blog{
+    margin-top: 50px;
+  }
+  .content{
+    height: auto;
+  }
+  .blog .for_320px{
+    display: none;
+  }
+  .blog .read_more{
+    display: none;
+  }
+  .blog .for_320px{
+    display: inline-block;
+    margin-left: 227px;
+    margin-top: 5px;
+    font-size: 18px;
+    font-family: 'league_gothicregular';
+    color: rgb( 69, 69, 69 );
+    line-height: 1.333;
+    text-align: left;
+    text-shadow: 0.5px 0.866px 0px rgb( 255, 255, 255 );
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .brands{
+    width: 86.66666666666667%;
+  }
+  .brands img{
+    margin-left: 60px;
+    margin-top: 20px;
+  }
+  .footer_content section{
+    width: 96.4683333333333%;
+    margin-top: 0px;
+  }
+  .footer_content{
+    height: auto;
+  }
+  .footer_nav nav{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .footer_nav .menu__link{
+    margin-right: 30px;
+  }
+  .footer_nav .design{
+    margin: 0 auto;
+    margin-left: 30%;
+  }
+}
+
+@media (max-width: 320px) {
+  .phone{
+    display: none;
+  }
+  header{
+    height: 515px;
+  }
+  header .logo img{
+    margin-left: 65px;
+  }
+  header .menu{
+    margin: 0 auto;
+    margin-left: 20px;
+  }
+  .slider__phone{
+    width: 100%;
+    margin-left: 25px;
+  }
+  .about{
+    height: 600px;
+    padding-top: 60px;
+  }
+  .about section{
+    width:86.4683333333333%;
+    display: block;
+    height: 133px;
+    overflow: hidden;
+    margin-left: -10px;
+    margin-top: 30px;
+  }
+  .about p{
+    height: 4.5em;
+    padding: 0;
+    overflow: hidden;
+    font-size: 16px;
+  }
+  .about .read_more{
+    margin: 0;
+    margin-left: 75%;
+    margin-top: 10px;
+  }
+  .testimonials{
+    width: 255px;
+  }
+  .testimonials h3{
+    margin-left: 40px;
+  }
+  .testimonials h3 span{
+    margin-right: -10px;
+  }
+  .testimonials p{
+    margin-left: 40px;
+  }
+  .content .navigation{
+    margin: 20px 0px 0px 115px;
+  }
+  .content section{
+    width: 100%;
+    height: 345px;
+    margin-top: -50px;
+    margin-left: -10px;
+  }
+  .content{
+    height: auto;
+  }
+  .blog .blog__text h4{
+    width: 45px;
+    margin-left: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 0px 110px 0px 20px;
+  }
+  .blog .blog__text p{
+    width: 165px;
+    margin-left: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 0px 50px 0px 20px;
+  }
+  .brands{
+    width: 79.375%;
+  }
+  .brands img{
+    margin-left: 36px;
+    margin-top: 20px;
+  }
+  footer{
+    height: 108px;
+  }
+  .footer_box{
+    display: none;
+  }
+  .footer_nav nav{
+    display: none;
+  }
+  .footer_nav .design{
+    margin-left: 25%;
+  }
+  .blog .read_more{
+    display: none;
+  }
+  .blog .for_320px{
+    display: inline-block;
+    margin-left: 210px;
+    margin-top: 5px;
+    font-size: 18px;
+    font-family: 'league_gothicregular';
+    color: rgb( 69, 69, 69 );
+    line-height: 1.333;
+    text-align: left;
+    text-shadow: 0.5px 0.866px 0px rgb( 255, 255, 255 );
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}
