@@ -2,7 +2,7 @@ function pow(x, n) {
   var result = x;
 
   for (var i = 1; i < n; i++) {
-    result *= x;
+    result = Math.pow(x,n);
   }
   return result;
 }
